@@ -1,0 +1,20 @@
+# other
+output.docx
+
+# Node
+node_modules
+package-lock.json
+
+# Typescript
+build
+
+## IDEs and text editors
+# Sublime Text
+*.sublime-*
+
+# VS Code
+.vscode
+
+## Other
+# Libreoffice temporary files
+.~*\#

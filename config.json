@@ -1,0 +1,19 @@
+{
+	"envoyeur": "Mediwatch",
+	"envoyeur_addresse_1": "24 rue Pasteur",
+	"envoyeur_addresse_2": "94270 Le Kremlin-Bicêtre",
+	"envoyeur_addresse_3": "France",
+	"destinataire": "Zaman Kebab",
+	"destinataire_addresse_1": "3 rue des pigeons",
+	"destinataire_addresse_2": "94132 Le Kremlin-Bicêtre",
+	"numéro_facture": "FA-2",
+	"date_facture": "24/01/2020",
+	"description": "Abonnement Neral 1 mois",
+	"quantité": "1",
+	"unité": "pce.",
+	"prix_unitaire_HT": "50000.00",
+	"total_TTC": "50000.00",
+	"téléphone": "+33 X XX XX XX XX",
+	"email": "contact.mandareen@gmail.com",
+	"IBAN": "XXXXXXXXXX"
+}
