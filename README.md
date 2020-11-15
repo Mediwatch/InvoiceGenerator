@@ -7,6 +7,9 @@ To modify the content modify config.json.
 You can find the result in output.docx.
 
 ### Use
+Install:\
+```$ npm i```
+
 Compile:\
 ```$ npm run build```
 
