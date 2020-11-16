@@ -10,6 +10,9 @@ You can find the result in output.docx.
 Install:\
 ```$ npm i```
 
+Other dependencies:\
+libreoffice
+
 Compile:\
 ```$ npm run build```
 

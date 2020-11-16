@@ -13,7 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "docx-templates": "^4.3.0"
+    "commandpost": "^1.4.0",
+    "docx-templates": "^4.3.0",
+    "libreoffice-convert": "^1.3.2"
   },
   "devDependencies": {
     "@types/docx-templates": "^4.0.0",
