@@ -18,7 +18,7 @@ async function convertDocxToPdf(docxBuffer: Uint8Array): Promise<Buffer> {
   })
 }
 
-async function generateInvoice(templateFile, dataFile, format, output) {
+async function generateInvoice(templateFile, dataFile, format, output, overwrite) {
   const [template, dataBuf] = await Promise.all([
     readFileAsync(templateFile),
     readFileAsync(dataFile)
@@ -33,18 +33,18 @@ async function generateInvoice(templateFile, dataFile, format, output) {
   })
 
   if (format === 'docx') {
-    fs.writeFileSync(output, buf)
+    fs.writeFileSync(output, buf, {flag: overwrite ? 'w' : 'wx'})
   } else {
     const pdfBuffer = await convertDocxToPdf(buf)
 
-    fs.writeFileSync(output, pdfBuffer)
+    fs.writeFileSync(output, pdfBuffer, {flag: overwrite ? 'w' : 'wx'})
   }
 }
 
 async function main() {
   try {
-    const [template, data, format, output] = await getArgs()
-    generateInvoice(template, data, format, output)
+    const [template, data, format, output, overwrite] = await getArgs()
+    await generateInvoice(template, data, format, output, overwrite)
   } catch (e) {
     console.log(e.message)
   }
