@@ -9,6 +9,9 @@ package-lock.json
 # Typescript
 build
 
+# Packaged binary
+invoice_generator
+
 ## IDEs and text editors
 # Sublime Text
 *.sublime-*
