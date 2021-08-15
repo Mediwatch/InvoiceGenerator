@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "clean": "rm -rf node_modules build",
-    "build-bin": "npm run build && pkg ./build/index.js -o invoice_generator -t linux"
+    "build-bin-lin": "npm run build && pkg ./build/index.js -o invoice_generator -t linux",
+    "build-bin-win": "npm run build && pkg ./build/index.js -o invoice_generator -t windows"
   },
   "keywords": [],
   "author": "",
